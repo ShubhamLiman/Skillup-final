@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GuideCard from "./GuideCard";
+import { AnyAaaaRecord } from "dns";
 
 interface Guide {
   imageName: string;
@@ -26,7 +27,7 @@ function GuidesCaresoul({ guides }: GuidesCaresoulProps) {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    beforeChange: (current, next) => setCurrentSlide(current),
+    beforeChange: (current: any) => setCurrentSlide(current),
   };
   return (
     <Slider {...settings}>

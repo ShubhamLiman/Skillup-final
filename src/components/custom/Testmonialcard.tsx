@@ -1,4 +1,3 @@
-import { Interface } from "readline";
 interface ReviewCardInterface {
   profile: string;
   name: string;

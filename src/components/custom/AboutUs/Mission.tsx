@@ -22,11 +22,7 @@ const Mission = () => {
             community, united by a common goal: the pursuit of excellence.
           </p>
           <div className="flex items-center justify-between lg:justify-start gap-1 lg:gap-2 my-4 lg:my-4">
-            <Button
-              link="/about"
-              text="Enroll Now"
-              classname="py-3 px-8 lg:py-3 "
-            />
+            <Button text="Enroll Now" classname="py-3 px-8 lg:py-3 " />
             <ShinyButton className="border rounded-md py-3">
               <span className="text-xs lg:text-base text-nowrap text-black font-semibold py-1">
                 Get Free Career Evaluation
@@ -57,11 +53,7 @@ const Mission = () => {
             to succeed.
           </p>
           <div className="flex items-center justify-between lg:justify-start gap-1 lg:gap-2 my-4 lg:my-4">
-            <Button
-              link="/about"
-              text="Enroll Now"
-              classname="py-3 px-8 lg:py-3 "
-            />
+            <Button text="Enroll Now" classname="py-3 px-8 lg:py-3 " />
             <ShinyButton className="border rounded-md py-3">
               <span className="text-xs lg:text-base text-nowrap text-black font-semibold py-1">
                 Get Free Career Evaluation

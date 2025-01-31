@@ -6,9 +6,7 @@ import p1 from "../../assets/p1.png";
 import p2 from "../../assets/p2.png";
 import p3 from "../../assets/p3.png";
 import p4 from "../../assets/p4.png";
-import p5 from "../../assets/Women.svg";
 import p6 from "../../assets/Image (1).svg";
-import p7 from "../../assets/Image.svg";
 import p8 from "../../assets/person_outline.svg";
 function Guidance() {
   const guides = [

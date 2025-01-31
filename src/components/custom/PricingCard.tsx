@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 
 interface IProp {
-  id: number;
   name: string;
   about: string;
   plan: string;
@@ -15,7 +14,6 @@ interface IProp {
 export default function PricingCard({
   about,
   feature,
-  id,
   link,
   name,
   plan,
@@ -57,7 +55,6 @@ export default function PricingCard({
       className={`w-[374px] transition-all hover:scale-[1.1] "h-[684px] bg-white hover:bg-green-primary text-black" : "h-[644px]"
       rounded-lg overflow-hidden shadow-xl relative flex flex-col p-3 items-center justify-around group`}
     >
-      {/* Flash Sale Tag */}
       <div className="mx-auto p-2 bg-red-primary rounded-lg z-50 flex items-center">
         <img src="/icons/shock.svg" alt="" />
         <span className={`text-sm font-semibold text-white`}>Flash Sale</span>
@@ -74,9 +71,6 @@ export default function PricingCard({
       <h2 className="group-hover:text-white text-center text-2xl lg:text-3xl my-1 font-semibold z-40">
         {`${plan.split("-")[0]} `}
         <s
-          // className={`lowercase text-base text-black-100 font-normal ${
-          //   id === 2 && "text-white"
-          // }`}
           className={`lowercase text-base text-black-100 group-hover:text-white  font-normal
           `}
         >
@@ -87,15 +81,8 @@ export default function PricingCard({
         {tag}
       </span>
 
-      {/* <span className="w-[500px] absolute h-[500px] scale-150 rounded-[100%] bg-green-quaternary/50 top-[35%]"></span> */}
-
       <span className="hidden group-hover:block w-[500px] absolute h-[500px] scale-150 rounded-[100%] bg-green-quaternary/50 top-[35%]"></span>
-      <div
-        // className={`w-full relative min-h-[374px] flex flex-col justify-around items-center z-40 ${
-        //   id === 2 ? "bg-white text-black" : "bg-green-light"
-        // } rounded-lg p-3`}
-        className="w-full relative min-h-[374px] flex flex-col justify-around items-center z-40 hover:bg-white hover:text-black bg-green-light  rounded-lg p-3"
-      >
+      <div className="w-full relative min-h-[374px] flex flex-col justify-around items-center z-40 hover:bg-white hover:text-black bg-green-light  rounded-lg p-3">
         <div className="w-full px-4">
           {feature.map((feature, i) => (
             <div className="flex items-center justify-start gap-3 my-5" key={i}>
@@ -104,8 +91,6 @@ export default function PricingCard({
             </div>
           ))}
         </div>
-
-        {/* Countdown Timer */}
         <div className="text-center mb-2 bg-yellow-100 p-3 rounded-lg w-full">
           <p className="text-lg font-semibold bg-red-primary text-white py-2 flex items-center justify-center">
             <Clock className="w-5 h-5 mr-2 " />
