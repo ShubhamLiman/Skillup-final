@@ -14,7 +14,6 @@ const Pricing = () => {
       <div className="w-[90%] lg:w-full h-[80%] mt-6 flex flex-col lg:flex-row items-center justify-around p-6 mx-auto gap-7">
         {pricingData.map((data) => (
           <PricingCard
-            id={data.id}
             about={data.about}
             feature={data.feature}
             link={data.link}

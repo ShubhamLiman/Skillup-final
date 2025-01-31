@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GuideCard from "./GuideCard";
-import { AnyAaaaRecord } from "dns";
 
 interface Guide {
   imageName: string;
