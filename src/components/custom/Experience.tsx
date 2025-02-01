@@ -6,7 +6,7 @@ const Experience = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -26,7 +26,7 @@ const Experience = () => {
           graduates are saying:
         </p>
       </div>
-      <div className="hidden lg:flex w-full lg:w-[85%] mx-auto h-auto items-center justify-between lg:justify-center overflow-scroll gap-12 no-scrollbar ">
+      <div className="hidden lg:flex w-full lg:w-[85%] mx-auto h-auto items-center justify-between lg:justify-center overflow-scroll lg:gap-12 gap-[20px] no-scrollbar ">
         {experienceCard.map((card) => (
           <ExperienceCard
             title={card.title}
