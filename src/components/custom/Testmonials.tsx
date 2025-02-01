@@ -104,14 +104,6 @@ function Testmonials() {
           />
         ))}
       </div>
-      {/* <div className="flex w-full mx-auto h-auto items-center justify-between overflow-scroll gap-12 no-scrollbar">
-        <Slider {...settings}>
-          <div>Slide1</div>
-          <div>Slide2</div>
-          <div>Slide3</div>
-          <div>Slide4</div>
-        </Slider>
-      </div> */}
     </div>
   );
 }
