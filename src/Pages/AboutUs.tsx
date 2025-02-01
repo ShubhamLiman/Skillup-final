@@ -1,4 +1,4 @@
-import Experience from "@/components/custom/AboutUs/Experience";
+import Experience from "@/components/custom/Experience";
 import { BreadcrumbWithCustomSeparator } from "../components/shared/BreadScrum";
 import Hero from "@/components/custom/AboutUs/Hero";
 import Mission from "@/components/custom/AboutUs/Mission";

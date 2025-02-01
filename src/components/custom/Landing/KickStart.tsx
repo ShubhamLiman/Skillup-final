@@ -24,7 +24,7 @@ const KickStart = () => {
           graduates are saying:
         </p>
       </div>
-      <div className="hidden  w-full lg:w-[95%] mx-auto h-auto lg:flex items-center justify-between overflow-scroll gap-[45px] no-scrollbar ">
+      <div className="hidden w-full lg:w-[95%] mx-auto h-auto lg:flex items-center justify-between overflow-scroll gap-[45px] no-scrollbar ">
         {kickStartCard.map((card) => (
           <KickStartCard
             img={card.img}

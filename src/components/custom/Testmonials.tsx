@@ -4,8 +4,44 @@ import person2 from "../../assets/Ellipse 1 (1).svg";
 import person3 from "../../assets/Ellipse 1 (2).svg";
 import person4 from "../../assets/blackwomen.svg";
 import bg from "../../assets/Group 39875.svg";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function Testmonials() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   const ppl = [
     {
       profile: person,
@@ -57,9 +93,10 @@ function Testmonials() {
           5.0 Rating
         </div>
       </div>
-      <div className="flex justify-center items-center gap-[45px]">
-        {ppl.map((person) => (
+      <div className="flex lg:flex-row flex-col justify-center items-center gap-[45px]">
+        {ppl.map((person, i) => (
           <ReviewCard
+            key={i}
             profile={person.profile}
             name={person.name}
             role={person.role}
@@ -67,6 +104,14 @@ function Testmonials() {
           />
         ))}
       </div>
+      {/* <div className="flex w-full mx-auto h-auto items-center justify-between overflow-scroll gap-12 no-scrollbar">
+        <Slider {...settings}>
+          <div>Slide1</div>
+          <div>Slide2</div>
+          <div>Slide3</div>
+          <div>Slide4</div>
+        </Slider>
+      </div> */}
     </div>
   );
 }
