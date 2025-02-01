@@ -8,7 +8,7 @@ function GuideCard({
   role: string;
 }) {
   return (
-    <div className="flex w-[338px] lg:w-[391.5px] h-20 justify-between items-center px-5 py-[15.66px] shadow-[0px_2px_10px_0px_rgba(0,0,0,0.16)] bg-white rounded-[10px]">
+    <div className="flex w-[338px] lg:w-[391.5px] h-[60.89px] justify-between items-center px-5 py-[15.66px] lg:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.16)] bg-white rounded-[10px]">
       <div className="flex items-center  gap-4">
         <div className="w-10 h-10 rounded-full ">
           <img src={img} className="w-full h-full object-cover" alt="Profile" />

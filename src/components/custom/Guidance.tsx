@@ -34,7 +34,7 @@ function Guidance() {
 
   return (
     <div className="lg:my-[120px] flex justify-center items-center ">
-      <div className="relative flex justify-center items-center w-[1280px] lg:h-[695px] h-[1355px] bg-[#159B76] lg:rounded-[20px] overflow-hidden">
+      <div className="hidden lg:flex relative justify-center items-center w-[1280px] lg:h-[695px] bg-[#159B76] lg:rounded-[20px] overflow-hidden">
         <div className="absolute top-[20px] lg:top-[62px] lg:left-[69px] flex flex-col lg:gap-[22px] gap-[18px] lg:items-start items-center">
           <button className="lg:px-[12.86px] py-[4.82px] bg-[#21B38C] lg:h-[39px] h-[29.48px] lg:w-[285px] w-[200px] rounded-[20px] lg:gap-[6.429px] gap-[3.103px] flex flex-row items-center justify-center">
             <span className="text-black text-lg text-center leading-[20.733px] w-[16px] h-[21px] font-Lato">
@@ -118,7 +118,7 @@ function Guidance() {
             </span>
           </button>
 
-          <div className="lg:hidden flex flex-col items-center mt-[44px] w-full">
+          {/* <div className="lg:hidden flex flex-col items-center mt-[44px] w-full">
             <div className="mb-[20px]">
               <GuideCard img={p1} name="Neha Sharma" role="AI Engineer" />
             </div>
@@ -199,7 +199,7 @@ function Guidance() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hidden lg:block absolute left-0 bottom-[-0.1px] w-[764px] h-214px">
@@ -258,6 +258,153 @@ function Guidance() {
         </div>
         <div className="hidden lg:block absolute right-2 bottom-10">
           <GuideCard img={p1} name="Neha Sharma" role="AI Engineer" />
+        </div>
+      </div>
+      <div className="lg:hidden w-full bg-[#159B76] ">
+        <div className="p-[20px] flex flex-col w-full items-center justify-center gap-[18px]">
+          <button className="lg:px-[12.86px] py-[4.82px] bg-[#21B38C] lg:h-[39px] h-[29.48px] lg:w-[285px] w-[200px] rounded-[20px] lg:gap-[6.429px] gap-[3.103px] flex flex-row items-center justify-center">
+            <span className="text-black text-lg text-center leading-[20.733px] w-[16px] h-[21px] font-Lato">
+              🎉
+            </span>
+            <span className="text-white text-[10.861px] not-italic font-bold lg:w-[158px] w-[141.2px] leading-[27.433px] text-center font-Lato">
+              Guidance From The Experts
+            </span>
+          </button>
+          <div className=" w-full text-center">
+            <span className="text-white text-[22px] not-italic font-bold leading-[120%] font-Lato self-stretch">
+              Empowering the Future with Artificial Intelligence -
+            </span>
+            <span className="text-[#005B42] text-[22px] not-italic font-bold leading-[120%] font-Lato">
+              where innovation meets possibility!
+            </span>
+          </div>
+          <div className="w-full text-center">
+            <span className="text-white text-[14px] not-italic font-normal leading-[120%] font-Lato">
+              Earn industry-recognized certificates with each workshop you
+              complete, showcasing your expertise and commitment to professional
+              excellence.
+            </span>
+          </div>
+
+          <div className="flex flex-row items-center justify-center w-full gap-[13.8px]">
+            <div className="relative flex items-center h-8 w-[55px] justify-start">
+              <img
+                src={p1}
+                alt="*"
+                className="absolute w-[20.526px] h-[20.526px] rounded-full object-cover border-[2px] border-white left-0  top-0"
+              />
+              <img
+                src={p2}
+                alt="*"
+                className="absolute w-[20.526px] h-[20.526px] rounded-full object-cover border-[2px] border-white  left-3   top-0 "
+              />
+              <img
+                src={p3}
+                alt="*"
+                className="absolute w-[20.526px] h-[20.526px] rounded-full object-cover border-[2px] border-white left-6  top-0 "
+              />
+              <img
+                src={p4}
+                alt="*"
+                className="absolute w-[20.526px] h-[20.526px] rounded-full object-cover border-[2px] border-white left-9  top-0 "
+              />
+            </div>
+            <div className="text-center  flex flex-col items-start">
+              <h1 className="font-bold text-white text-sm md:text-base ">
+                <span className="inline-block tabular-nums tracking-wider text-white text-base not-italic font-semibold leading-[120%]">
+                  32
+                </span>
+                + Guidance
+              </h1>
+              <p className="text-white text-sm  whitespace-nowrap">
+                delivered to the learners
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center mt-[44px] w-full">
+          <div className="mb-[20px] p-[20px]">
+            <GuideCard img={p1} name="Neha Sharma" role="AI Engineer" />
+          </div>
+          <div className="relative flex justify-center w-full h-[274px]">
+            <img
+              src={ladysmall}
+              alt="Lady img"
+              className="absolute left-[50%] -translate-x-1/2 "
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="303"
+              height="299"
+              viewBox="0 0 303 299"
+              fill="none"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M186.075 290.664C111.089 325.326 42.1272 241.856 5.08125 161.712C-15.6839 116.789 43.4242 92.4167 85.4558 72.9879C157.461 39.7042 249.567 -44.7006 285.14 32.2569C332.115 133.881 281.159 246.712 186.075 290.664Z"
+                fill="url(#paint0_linear_4_4757)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_4_4757"
+                  x1="314.029"
+                  y1="94.7554"
+                  x2="33.9707"
+                  y2="224.21"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#FF8008" />
+                  <stop offset="1" stopColor="#FFC837" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div className="w-full bg-[#F0F6F0] rounded-t-[30px] z-50 flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center my-[10px] bg-white rounded-[30px] px-[10px]">
+              <span className="text-[rgba(0,_0,_0,_0.60)] font-[Lato] text-[12px] not-italic font-medium leading-[120%] my-4">
+                More than 200+ experts trusted us
+              </span>
+              <div className="flex flex-col gap-1 my-3">
+                {guides.map((guide, index) => (
+                  <div>
+                    <GuideCard
+                      key={index}
+                      img={guide.imageName}
+                      name={guide.name}
+                      role={guide.role}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-[10px] mb-[10px] mx-[10px] flex gap-[13.173px] items-center w-[300px] h-[37px] flex-shrink-0">
+              <button className="flex w-[143px] h-[34px] px-[9.58px] py-[3.593px] justify-center items-center gap-[4.79px] flex-shrink-0 rounded-[2.395px] border-[0.599px] border-[solid] border-[#17D059] bg-[#0DBA4B]">
+                <span className="text-[#FFF] font-[Lato] text-[12px] not-italic font-semibold leading-[13.173px]">
+                  Enroll Now
+                </span>
+                <span className="w-[14.37px] h-[14.37px]  leading-[13.173px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.39553 12.29L6.55128 11.4458L9.89232 8.09877L2.6055 8.09877L2.6055 6.90127L9.89232 6.90127L6.5453 3.56023L7.39553 2.71L12.1855 7.50002L7.39553 12.29Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button className="flex h-[33px] px-[9.58px] py-[3.593px] justify-center items-center gap-[4.79px] flex-[1_0_0] border-[0.599px] border-[solid] border-[#000]">
+                <span className="font-[Lato] text-[10px] not-italic font-medium leading-[13.173px]">
+                  Get Free Career Evaluation
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -20,8 +20,10 @@ const ExperienceCard = ({ img, number, para, sign, tag, id, title }: IProp) => {
     >
       <div className="w-full h-full scale-up transition-all flex flex-col justify-between lg:justify-between ">
         <div>
-          <h3 className="font-base mt-2 lg:mt-4 ">{tag}</h3>
-          <h1 className="my-2 lg:my-4 text-2xl lg:text-5xl font-bold">
+          <h3 className="font-base mt-2 lg:mt-4 text-[12px] lg:[13.5px]">
+            {tag}
+          </h3>
+          <h1 className="my-2 lg:my-4 text-[28px] lg:text-5xl font-bold">
             {number && (
               <NumberTicker
                 value={number}
@@ -34,10 +36,14 @@ const ExperienceCard = ({ img, number, para, sign, tag, id, title }: IProp) => {
             )}
             {sign}
           </h1>
-          <p className="hidden md:line-clamp-4">{para}</p>
-          <p className="flex md:hidden text-2xl pr-7 font-semibold">{title}</p>
+          <p className="hidden md:line-clamp-4 text-[12px] lg:text-[15px]">
+            {para}
+          </p>
+          <p className="flex md:hidden text-[12px] lg:[15px] pr-7 font-semibold">
+            {title}
+          </p>
         </div>
-        <img src={img} alt="image" className="w-full object-cover" />
+        <img src={img} alt="image" className="w-full object-contain" />
       </div>
     </div>
   );

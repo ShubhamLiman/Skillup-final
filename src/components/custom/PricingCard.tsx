@@ -52,8 +52,8 @@ export default function PricingCard({
 
   return (
     <div
-      className={`w-[374px] transition-all hover:scale-[1.1] "h-[684px] bg-white hover:bg-green-primary text-black" : "h-[644px]"
-      rounded-lg overflow-hidden shadow-xl relative flex flex-col p-3 items-center justify-around group`}
+      className={`w-[374px] transition-all lg:hover:scale-[1.1] "h-[684px] bg-white hover:bg-green-primary text-black" : "h-[644px]"
+      rounded-[15.224px] overflow-hidden shadow-xl relative flex flex-col p-3 items-center justify-around group`}
     >
       <div className="mx-auto p-2 bg-red-primary rounded-lg z-50 flex items-center">
         <img src="/icons/shock.svg" alt="" />
