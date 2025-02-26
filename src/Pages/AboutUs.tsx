@@ -8,6 +8,7 @@ import Team from "@/components/custom/AboutUs/Team";
 import { Stripe } from "@/components";
 import Allumini from "@/components/custom/AboutUs/Allumini";
 import Testmonials from "@/components/custom/Testmonials";
+
 const aboutBreadScrum = [
   {
     label: "Home",

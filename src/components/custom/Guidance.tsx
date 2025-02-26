@@ -284,7 +284,7 @@ function Guidance() {
               </span>
               <div className="flex flex-col gap-1 my-3">
                 {guides.map((guide, index) => (
-                  <div>
+                  <div key={index}>
                     <GuideCard
                       key={index}
                       img={guide.imageName}
