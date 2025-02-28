@@ -22,7 +22,8 @@ const PopupForm = () => {
         <div className="relative">
           <span
             className="absolute right-5 top-5 cursor-pointer z-50"
-            onClick={handleClosePopup}>
+            onClick={handleClosePopup}
+          >
             <img src="/icons/cross.svg" alt="crossIcons" className="invert" />
           </span>
           <SkillUpForm key={1} />
