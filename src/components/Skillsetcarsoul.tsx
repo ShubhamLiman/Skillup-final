@@ -1,4 +1,3 @@
-import React from "react";
 import SkillsetCard from "./SkillsetCard";
 import Slider from "react-slick";
 function Skillsetcarsoul() {
