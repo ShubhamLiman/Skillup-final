@@ -40,10 +40,10 @@ function Skillsetcarsoul() {
     },
   ];
 
-  const evenSkillset = skillset.filter((_, index) => index % 2 === 0);
-  const oddSkillset = skillset.filter((_, index) => index % 2 !== 0);
+  // const evenSkillset = skillset.filter((_, index) => index % 2 === 0);
+  // const oddSkillset = skillset.filter((_, index) => index % 2 !== 0);
 
-  const settings = {
+  const settings1 = {
     dots: false,
     infinite: true,
     slidesToShow: 3,
@@ -53,20 +53,27 @@ function Skillsetcarsoul() {
     speed: 5000,
     autoplaySpeed: 5000,
     cssEase: "linear",
+    rtl: true,
+    initialSlide: 0,
+  };
+
+  const settings2 = {
+    ...settings1,
+    initialSlide: 3, // Start from the second slide
   };
 
   return (
-    <div className="flex justify-center w-full h-full gap-7 overflow-hidden">
-      <div className=" w-full slider-container">
-        <Slider {...settings}>
-          {evenSkillset.map((item, index) => (
+    <div className="flex justify-center w-full h-full gap-7">
+      <div className=" w-full h-auto slider-container">
+        <Slider {...settings1}>
+          {skillset.map((item, index) => (
             <SkillsetCard key={index} {...item} />
           ))}
         </Slider>
       </div>
-      <div className=" w-full slider-container">
-        <Slider {...settings}>
-          {oddSkillset.map((item, index) => (
+      <div className=" w-full h-auto slider-container">
+        <Slider {...settings2}>
+          {skillset.map((item, index) => (
             <SkillsetCard key={index} {...item} />
           ))}
         </Slider>
