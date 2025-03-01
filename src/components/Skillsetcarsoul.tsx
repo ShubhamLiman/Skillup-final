@@ -51,7 +51,7 @@ function Skillsetcarsoul() {
     vertical: true,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 100,
     cssEase: "linear",
     rtl: true,
     initialSlide: 0,
