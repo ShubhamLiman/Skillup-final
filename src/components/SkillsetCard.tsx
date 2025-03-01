@@ -1,8 +1,12 @@
 import React from "react";
-
-function SkillsetCard({ one, two, three }) {
+interface SkillsetCardProps {
+  one: string;
+  two: string;
+  three: string;
+}
+function SkillsetCard({ one, two, three }: SkillsetCardProps) {
   return (
-    <div className="flex flex-col w-[327px] h-auto p-6 border border-gray-100 rounded-xl my-4">
+    <div className="flex flex-col w-full h-auto p-6 border border-black-100 rounded-xl my-4">
       <div className="w-full font-[Lato] font-semibold text-[16px] leading-[19.2px] tracking-[0px] mb-2">
         {one}
       </div>

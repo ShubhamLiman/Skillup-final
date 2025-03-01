@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 
 import { showPopup } from "@/feature/popupSlice";
-import Skillsetcarsoul from "../../components/shared/Skillsetcarsoul";
+import Skillsetcarsoul from "./Skillsetcarsoul";
 const Feature = () => {
   const dispatch = useDispatch();
 
@@ -35,7 +35,7 @@ const Feature = () => {
           className="w-[90%] h-auto  hidden object-cover lg:block"
         />
       </div>
-      <div className="w-1/2 h-full px-[39px] py-[48px] overflow-hidden">
+      <div className="w-1/2 h-full px-[39px] py-[48px]">
         <Skillsetcarsoul />
       </div>
     </div>

@@ -57,15 +57,15 @@ function Skillsetcarsoul() {
   };
 
   return (
-    <div className="flex w-full h-full gap-7 justify-center overflow-hidden">
-      <div className="w-1/2 slider-container">
+    <div className="flex justify-center w-full h-full gap-7 overflow-hidden">
+      <div className=" w-full slider-container">
         <Slider {...settings}>
           {evenSkillset.map((item, index) => (
             <SkillsetCard key={index} {...item} />
           ))}
         </Slider>
       </div>
-      <div className="w-1/2 slider-container">
+      <div className=" w-full slider-container">
         <Slider {...settings}>
           {oddSkillset.map((item, index) => (
             <SkillsetCard key={index} {...item} />
