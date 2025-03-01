@@ -35,7 +35,7 @@ const Feature = () => {
           className="w-[90%] h-auto  hidden object-cover lg:block"
         />
       </div>
-      <div className="w-1/2 h-full px-[39px] py-[48px]">
+      <div className="lg:w-1/2 lg:h-full w-full h-325px lg:px-[39px] lg:py-[48px] px-[18.5px] py-[23px] overflow-hidden">
         <Skillsetcarsoul />
       </div>
     </div>

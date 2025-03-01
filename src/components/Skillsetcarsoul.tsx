@@ -63,7 +63,7 @@ function Skillsetcarsoul() {
   };
 
   return (
-    <div className="flex justify-center w-full h-full gap-7">
+    <div className="flex justify-center w-full h-full lg:gap-7 gap-3">
       <div className=" w-full h-auto slider-container">
         <Slider {...settings1}>
           {skillset.map((item, index) => (
